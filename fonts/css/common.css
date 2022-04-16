@@ -1,0 +1,76 @@
+
+.container {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top:0px;
+                                               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 30px;
+}
+
+
+input[type=text],input[type=email],textArea{
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
+
+input[type=text]:focus,input[type=email]:focus,textArea:focus {
+    width: 85%;
+    border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+input[type=text]:hover,input[type=email]:hover,textArea:hover {
+    width: 90%;
+}
+
+
+.but {
+  border-radius: 4px;
+  background-color: #357ae8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 190px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+ 
+.but span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.but span:after {
+  content: ' Query';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.but:hover span {
+  padding-right: 50px;
+  
+}.but:hover{
+background-color: #0000cc;}
+.but:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
